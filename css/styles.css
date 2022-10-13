@@ -73,11 +73,11 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.nav-box {
+.page-header__box {
   display: flex;
 }
 
-.nav {
+.site-nav {
   display: flex;
 }
 
@@ -96,7 +96,7 @@ body {
   color: var(--accent-color-2);
 }
 
-.site-nav {
+.site-nav__list {
   display: flex;
   align-items: center;
   margin-left: 93px;
