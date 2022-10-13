@@ -219,11 +219,7 @@ body {
 }
 
 .hero__button:hover,
-.hero__button:focus,
-.btn-sumbit:hover,
-.btn-sumbit:focus,
-.footer-btn:hover,
-.footer-btn:focus {
+.hero__button:focus {
   background-color: var(--btn-hover-color);
 }
 
@@ -496,7 +492,6 @@ body {
   color: var(--accent-color);
 }
 
-
 /* footer-social */
 
 .footer-social {
@@ -618,6 +613,11 @@ body {
     var(--animation-function);
 }
 
+.footer-form__btn:hover,
+.footer-form__btn:focus {
+  background-color: var(--btn-hover-color);
+}
+
 .footer-form__icon--end {
   margin-left: 10px;
 }
@@ -626,14 +626,14 @@ body {
 
 /* Фільтр */
 
-.filter-list {
+.filter__list {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.filter-btn {
+.filter__btn {
   padding: 6px 22px;
 
   font-family: inherit;
@@ -656,9 +656,9 @@ body {
     box-shadow var(--animation-duration) var(--animation-function);
 }
 
-.filter-btn:hover,
-.filter-btn:focus,
-.filter-btn:active {
+.filter__btn:hover,
+.filter__btn:focus,
+.filter__btn:active {
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--secondary-color);
@@ -668,37 +668,37 @@ body {
 
 /* Проєкти */
 
-.project-list {
+.project {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.project-item {
+.project__item {
   transition: box-shadow var(--animation-duration) var(--animation-function);
 }
 
-.project-item:hover {
+.project__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-item:hover .overlay-text,
-.project-item:focus .overlay-text {
+.project__item:hover .project__overlay,
+.project__item:focus .project__overlay {
   transform: translateY(-100%);
 }
 
-.project-thumb {
+.project__thumb {
   position: relative;
 
   overflow: hidden;
 }
 
-.project-img {
+.project__img {
   display: block;
 }
 
-.overlay-text {
+.project__overlay {
   position: absolute;
   transform: translateY(0%);
 
@@ -716,7 +716,7 @@ body {
   transition: transform var(--animation-duration) var(--animation-function);
 }
 
-.project-card {
+.project__card {
   padding: 20px 24px;
 
   border-left: 1px solid #eeeeee;
@@ -724,7 +724,7 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
-.project-title {
+.project__title {
   margin-top: 0;
   margin-bottom: 4px;
 
@@ -734,7 +734,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project-text {
+.project__text {
   margin-top: 0;
   margin-bottom: 0;
 
@@ -964,4 +964,9 @@ body {
 
   transition: background-color var(--animation-duration)
     var(--animation-function);
+}
+
+.btn-sumbit:hover,
+.btn-sumbit:focus {
+  background-color: var(--btn-hover-color);
 }
