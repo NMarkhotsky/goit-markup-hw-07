@@ -231,14 +231,7 @@ body {
 
 .features__list {
   display: flex;
-}
-
-.features__list > .item {
-  width: calc(100% / 4);
-}
-
-.item + .item {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 .features__box {
