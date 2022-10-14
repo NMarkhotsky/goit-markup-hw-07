@@ -26,6 +26,8 @@
 }
 
 .footer-social__link {
+  @extend %link;
+
   display: flex;
   justify-content: center;
   align-items: center;
